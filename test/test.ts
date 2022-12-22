@@ -1,26 +1,26 @@
 import {assert, fixture, html} from '@open-wc/testing'
-import '../src/custom-element'
+import '../src/overflow-menu-element'
 
-describe('custom-element', function () {
+describe('overflow-menu', function () {
   describe('element creation', function () {
     it('creates from document.createElement', function () {
-      const el = document.createElement('custom-element')
-      assert.equal('CUSTOM-ELEMENT', el.nodeName)
+      const el = document.createElement('overflow-menu')
+      assert.equal('OVERFLOW-MENU', el.nodeName)
     })
 
     it('creates from constructor', function () {
-      const el = new window.CustomElementElement()
-      assert.equal('CUSTOM-ELEMENT', el.nodeName)
+      const el = new window.OverflowMenuElement()
+      assert.equal('OVERFLOW-MENU', el.nodeName)
     })
   })
 
   describe('after tree insertion', function () {
     beforeEach(async function () {
-      await fixture(html` <custom-element></custom-element>`)
+      await fixture(html` <overflow-menu></overflow-menu>`)
     })
 
     it('initiates', function () {
-      const ce = document.querySelector('custom-element')
+      const ce = document.querySelector('overflow-menu')
       assert.equal(ce?.textContent, ':wave:')
     })
   })

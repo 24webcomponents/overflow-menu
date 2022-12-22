@@ -1,8 +1,8 @@
 {
   "tags": [
     {
-      "name": "custom-element",
-      "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<custom-element></custom-element>\n```",
+      "name": "overflow-menu",
+      "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<overflow-menu></overflow-menu>\n```",
       "attributes": []
     }
   ]
